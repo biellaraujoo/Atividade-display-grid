@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.casa {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr 1.5fr 1fr 0.5fr 1fr;
+    grid-template-areas:
+        "garagem garagem garagem"
+        "corredor quarto1 quarto1"
+        "corredor quarto2 quarto2"
+        "lavatorio americana1 quarto3"
+        "banheiro americana1 quarto3"
+        "lavanderia americana2 americana2"
+        "americana3 americana3 americana3"
+    ;
+}
+.garagem {
+    grid-area: garagem;
+    background-color: antiquewhite;
+}
+.corredor {
+    grid-area: corredor;
+    background-color: aquamarine;
+}
+.quarto1 {
+    grid-area: quarto1;
+    background-color: brown;
+}
+.quarto2 {
+    grid-area: quarto2;
+    background-color: rgb(15, 15, 117);
+}
+.lavatorio {
+    grid-area: lavatorio;
+    background-color: chocolate;
+}
+.americana1 {
+    grid-area: americana1;
+    background-color: darkmagenta;
+}
+.quarto3 {
+    grid-area: quarto3;
+    background-color: yellow;
+}
+.banheiro {
+    grid-area: banheiro;
+    background-color: slateblue;
+}
+.lavanderia {
+    grid-area: lavanderia;
+    background-color: red;
+}
+.americana2 {
+    grid-area: americana2;
+    background-color: hotpink;
+}
+.americana3 {
+    grid-area: americana3;
+    background-color: crimson;
+}
